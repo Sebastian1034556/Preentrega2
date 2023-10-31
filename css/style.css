@@ -1,0 +1,1186 @@
+
+
+/*----------------------------------------------------------------RESET-------------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*--------------------------------------------------------------BODY-----------------------------------------------------------------------------*/
+body {
+    background-color: black;
+}
+
+/*---------------------------------------------------------------HEADER--------------------------------------------------------------------------*/
+
+header {
+    position: relative;
+    display: flex;
+    justify-content:left;
+    flex-wrap: wrap;
+    height: 5em;
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1.6em;
+    margin-bottom: 0.8em;
+    margin-left: 17%;
+    margin-right: 20%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.3em;
+        }
+
+
+.logoTitle {
+    width: 14%;
+    height: 25%;
+    position: absolute;
+    margin-left: 1%;
+}
+
+header .logoTitle h1 {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+
+
+.searchBar {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px 10px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+
+.searchBar input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.searchBar div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    width: 5%;
+    height: 74%;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    
+}
+
+
+.dropdown-menu {
+    
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    top: 100%;
+    z-index: 1000;
+}
+
+
+.searchBar .heart {
+    height: 37%;
+    width: 5%;
+}
+
+.searchBar .cart {
+    height: 37%;
+    width: 5%;
+}
+
+
+@media screen and (max-width: 3000px) {
+
+    .searchBar input {  
+        height: 45%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        font-size: 15px;
+        color: #000000;
+        border-radius: 20px;
+        border-color: #000000;
+        border-width: 10px;
+        padding-left: 10px;
+    
+    }
+    
+    .logo {
+        width: 14%;
+        height: 100%;
+        background-color: #000000;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        height: 5em;
+    }
+
+    .searchBar input {
+        border-width: 10px;
+        width: 60%;
+    }
+    header .logoTitle h1 {
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 1290px) {
+    
+    .searchBar input {
+        font-size: 13px;
+    }
+    
+    header .logoTitle h1 {
+        font-size: small;
+    }
+}
+@media screen and (max-width: 1115px) {
+    
+    header {
+        height: 4em;
+    }
+    .searchBar input {
+        font-size: 10.5px;
+        border-width: 8px;
+    }
+
+    header .logoTitle h1 {
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width: 990PX) {
+    header .logoTitle h1 {
+        font-size: 9px ;
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        height: 3em;
+    }
+
+    .searchBar input {
+        font-size: 7px;
+        border-width: 5px;
+        width: 60%;
+    }
+
+    header .logoTitle h1 {
+        font-size: 7.5px;
+    }
+
+}
+@media screen and (max-width: 685px) {
+    header {
+        height: 2.4em;
+    }
+    header .logoTitle h1 {
+        font-size: 6.5px;
+    }
+    .searchBar input {
+        font-size: 7px;
+        border-width: 3px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        height: 2.2em;
+    }
+    header .logoTitle h1 {
+        font-size: 5.3px;
+    }
+}
+@media screen and (max-width: 503px) {
+
+    header {
+        height: 2em;
+    }
+    header .logoTitle h1 {
+        font-size: 4.7px;
+    }
+    
+}
+    @media screen and (max-width: 400px) {
+
+        header {
+            height: 2em;
+        }
+        header .logoTitle h1 {
+            font-size: 4.6px;
+            padding-left: 10%;
+            padding-top: 8%;
+            font-weight: 500;
+        }
+
+        header .logo {
+            width: 36px;
+        }
+        
+}
+
+@media screen and (max-width: 380px) {
+
+    header {
+        height: 2em;
+    }
+   header .logo {
+    width: 33px;
+    }
+
+    header {
+        margin-left: 10%;
+        width: 80%;
+    }
+    header .logoTitle h1 {
+        font-size: 4.6px;
+        padding-left: 1%;
+        font-weight: 500;
+    }
+
+    .searchBar input {
+        width: 90px;
+        font-size: 5.7px;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 276px) {
+
+    header {
+        height: 2em;
+    }
+   header .logo {
+    width: 33px;
+    }
+
+    .bar {
+        width: 30px;
+    }
+
+    header {
+        margin-left: 10%;
+        width: 80%;
+    }
+    header .logoTitle h1 {
+        font-size: 4.6px;
+        padding-left: 1%;
+        font-weight: 500;
+    }
+
+    
+    
+}
+
+
+
+/*-------------------------------------------------------------NAV-----------------------------------------------------------------------------*/
+
+nav {
+    width: 100%;
+    list-style-type: none; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:nowrap;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:nowrap;
+}
+
+nav ul li {
+    display: flex;
+    font-size: 20px;
+    padding-right: 3em;
+}
+
+nav ul li a {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width:1250px) {
+
+    a {
+        font-size: 15px;
+    } 
+        }
+
+
+
+        @media screen and (max-width: 831px) {
+
+            a {
+                font-size: 9px;
+                
+            } 
+            nav ul {
+                justify-content: space-around;                
+                } 
+            nav ul li {
+                padding-right: 0.1em;
+                }
+            }
+
+            @media screen and (max-width:500px) {
+                a {
+                    font-size: 8px;
+                }
+            }
+nav li a {
+    text-decoration: none;
+    color: white ;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+/*-------------------------------------------------------------MAIN-----------------------------------------------------------------------------*/
+
+@media screen and (max-width:2500px) {
+
+    main {
+    margin-top: 3%;
+    } 
+        }
+/*------------------------------------------------------------BANNER----------------------------------------------------------------------------*/
+
+.bannerImage {
+    padding-top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner .title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 10000;
+
+}
+.bannerH2 {
+    position: absolute;
+    height: 20%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buttonLink {
+    width: 10%;
+    height: 22%;
+}
+
+.banner .discount {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1000000;
+}
+
+
+.banner {
+    padding-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.banner .button {
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    border-radius: 5px;
+    padding: 0.2em 0.3em;
+
+    z-index: 10000;
+}
+
+
+
+@media screen and (max-width:2086px) {
+    .banner .button {
+        font-size: 10px;
+        border: 1px solid #fff;
+        width: 6em;
+        height: 3em;
+    }               
+    }
+
+    @media screen and (max-width:1039px) {
+        .banner .button {
+            font-size: 9px; 
+            padding: 0.18em 0.09em ;
+            border: 0.2px solid #fff;
+        }               
+    }
+        @media screen and (max-width:865px) {
+            .banner .button {
+                font-size: 7px; 
+                padding: 0.1em 0.1em ;
+                border: 0.2px solid #fff;
+            }               
+            }
+
+                    @media screen and (max-width:685px) {
+            .banner .button {
+            width: 6em;
+            height: 3em;
+            margin-left: -28%;
+        }               
+            }
+
+            @media screen and (max-width:685px) {
+                .banner .button {
+                width: 5em;
+                height: 2em;
+                margin-left: -28%;
+            }               
+                }
+
+    @media screen and (max-width:2000px) {
+        .banner h2 {
+            font-size: 40px;
+        }
+
+        .banner h3 {
+            font-size: 30px;
+        }
+        }
+    
+        @media screen and (max-width:1207px) {
+            .banner h2 {
+                font-size: 30px;
+            }
+    
+            .banner h3 {
+                font-size: 20px;
+            }
+            }
+
+            @media screen and (max-width:755px) {
+                .banner h2 {
+                    font-size: 20px;
+                }
+        
+                .banner h3 {
+                    font-size: 12px;
+                }
+                }
+
+
+
+                @media screen and (max-width:400px) {
+                    .banner h2 {
+                        font-size: 12px;
+                    }
+                }
+/*-------------------------------------------------------------CARRUSEL 1-------------------------------------------------------------------------*/
+
+
+.headsetsH3  {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 5%;
+    margin-bottom: -5%;
+    margin-left: 2%;
+
+}
+
+    .headsetsCarousel,.phonesCarousel {
+        position: relative;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 2%;
+        flex-wrap: wrap;
+    }
+
+
+.headset,.phones { 
+    margin-top: 5%;
+    position: relative;
+    height: 550px;
+    width: 350px;
+    background-color: #ffffff;
+}
+
+.hyperX,.jbl,.logitech,.razer p {
+    font-family: 'Roboto', sans-serif;    
+}
+
+
+    .oldPrice,.oldPricePhone {
+        position: absolute;
+        padding-left: 33%;
+        padding-top: 25.5%;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-decoration: line-through;
+        font-weight: 500;
+    }
+    
+    .oldPricePhone {
+        padding-left: 31%;
+    }
+    .offer {
+        position: absolute;        
+        margin-top: 25.5%;
+        background-color: #f4a020;
+        margin-left: 55.25%;
+    }
+
+
+.name,.namePhones {
+    position: absolute;
+    padding-top: 34%;
+    padding-left: 36%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    text-align: center; 
+    flex-direction: column;
+}
+
+
+
+
+/*---------------------------------------------------------------CARRUSEL 2----------------------------------------------------------------------*/
+.phonesH3  {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 13%;
+    margin-bottom: -5%;
+    margin-left: 2%;
+    font-size: xx-large;
+}
+
+.products img {
+    width: 100%;
+    height: 57%;
+    border-radius: 5px;
+}
+
+.a23,.a33,.iphone8Plus,.iphone11 {                            
+    height: 550px;
+    width: 350px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.a23,.a33,.iphone8Plus,.iphone11 p {
+    font-family: 'Roboto', sans-serif;    
+}
+
+
+.price {
+position: absolute;
+padding-left: 33%;
+padding-top: 10%;
+color: rgb(0, 0, 0);
+font-size: 50px;
+}
+
+@media screen and (max-width: 3000px) {
+    .headsetsH3,.phonesH3 {
+        font-size: xx-large;
+    }
+    .offer {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1290px) {
+
+    .headsetsH3,.phonesH3 {
+        font-size: x-large;
+    }
+    .headsetTitle,.phonesTitle {
+        display: flex;
+        justify-content: center;
+    }
+    .headset,.phones {
+        height: 400px; 
+        width: 266px;
+    }
+
+    .price {
+        padding-top: 11%;
+        padding-left: 36%; 
+        font-size: 35px;
+    }
+    .offer {
+        margin-left: 59%;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    .headset,.phones {
+        height: 280px; 
+        width: 186px;
+    }
+
+
+    .offer, .oldPrice, .name {
+        font-size: 14px;
+    }
+    
+    .offer {
+        margin-left: 60%;
+    }
+
+    .price {
+        padding-top: 10%;
+        padding-left: 36%; 
+        font-size: 27px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .headsetsH3,.phonesH3 {
+        font-size: large;
+    }
+
+    .headset,.phones {
+        height: 250px; 
+        width: 166px;
+    }
+    
+    .offer, .oldPrice, .name {
+        font-size: 12px;
+    }
+    
+    .headset .offer {
+        margin-left: 56%;
+    }
+
+
+    .price {
+        padding-top: 11%;
+        padding-left: 32%; 
+        font-size: 22px;
+    }
+
+
+}
+
+@media screen and (max-width: 685px) {
+    .headsetsH3,.phonesH3 {
+        font-size: medium;
+    }
+    .headset,.phones {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .headsetsCarousel,.phonesCarousel {
+        justify-content:center;
+    }
+    
+    .offer, .oldPrice, .name {
+        font-size: 11px;
+    }
+
+    .offer {
+        margin-left: 56%;
+    }
+
+    .price {
+        padding-top: 12%;
+        padding-left: 36%; 
+        font-size: 20px;
+    }    
+    
+}
+
+@media screen and (max-width: 444px) {
+    .headsetsH3,.phonesH3 {
+        font-size: small;
+    }
+    .headset,.phones {
+        height: 150px;
+        width: 100px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .headsetsCarousel,.phonesCarousel {
+        justify-content:center;
+    }
+    
+    .offer, .oldPrice, .name {
+        font-size: 8.5px;
+    }
+
+    .oldPrice {
+        padding-left: 27%;
+    }
+
+    .offer {
+        margin-left: 60%;
+    }
+
+    .price {
+        padding-top: 11%;
+        padding-left: 40%; 
+        font-size: 14px;
+    }    
+    
+}
+
+
+/*----------------------------------------------------------------ABOUT US-----------------------------------------------------------------------*/
+.usaContainer {
+    margin-top: 100px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .usaMap {
+
+    height: 400px;
+    width: 50%;
+  }
+
+  .usaTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    color: white;
+    margin-top: 60px; 
+  }
+
+.story {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.storyText {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: x-large;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+/*-------------------------------------------------------------------HELP--------------------------------------------------------------------------*/
+
+.faqTitle {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 75px;
+}
+
+.faq div {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+    margin-bottom: 29px;
+
+
+}
+
+.faq div h3 {
+    font-size: x-large;
+    margin-top: 140px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.faq div p {
+    color: #ffffff;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+
+.faq1 {
+    margin-top: -40px;
+}
+
+
+.linkToContact {
+    color: #ffffff; 
+    text-decoration: underline; 
+}
+
+
+.contactLink  {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+
+
+
+.contactLink h2 {
+    color: #ffffff;
+}
+
+.contactLink p {
+    font-size: large;
+    color: #ffffff;
+}
+
+
+.help {
+    height: 1500px;
+}
+
+/*-------------------------------------------------------------------CONTACT--------------------------------------------------------------------- */
+.contactTitle {
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+
+.contactTitleContainer {
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contactP {
+    color: #ffffff;
+}
+
+.contactH2Container {
+    width: 80%;
+    height: fit-content;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffffff;
+
+}
+
+.contactH2 {
+    color: #ffffff;
+}
+
+.contactPContainer {
+    width: 80%;
+    height: fit-content;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: large;
+
+}
+
+
+.formContainer {
+    width: 80%;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.inputContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    border: rgb(21, 0, 81) solid 6px;
+
+}
+
+.formContainer form {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.firstInput {
+    width: 80%;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: rgb(21, 0, 81) solid 3px;
+}
+.input {
+    width: 80%;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    border: rgb(21, 0, 81) solid 3px;
+}
+
+.lastInput {
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: rgb(21, 0, 81) solid 3px;
+}
+
+.nameLabel {
+    margin-left: 10%;
+    position: absolute;
+    top: 10px;
+    font-weight: 600;
+}
+.phoneNumberLabel {
+    margin-left: 10%;
+    position: absolute;
+    top: 90px;
+    font-weight: 600;
+}
+
+.emailLabel {
+    margin-left: 10%;
+    position: absolute;
+    top: 170px;
+    font-weight: 600;
+}
+
+.descriptionLabel {
+    margin-left: 10%;
+    position: absolute;
+    top: 250px;
+    font-weight: 600;
+}
+
+.submit {
+    position: absolute;
+    margin-left: 10%;
+    top: 320.5px;
+    font-weight: 800;
+    background-color: #ffffff;
+    border-radius: #000000 3px;
+    width: 90px;
+    height: 30px;
+    padding: 5px 10px; 
+    text-transform: uppercase;
+}
+
+
+.inputContainer label::before {
+    content: "* "; 
+    color: #ff0000; 
+  }
+
+
+/*----------------------------------------------------------------------PRODUCTS------------------------------------------------------------------ */
+.productsTitle {
+    color: #ffffff;
+}
+
+
+.productsTitleContainer {
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+main section .row div div {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+main section .row div div p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.card {
+    border: none;
+}
+.h2Products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productsMain div h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.cardContainer {
+    margin-bottom: 5%;
+}
+.productsMain {
+    background-color: #ffffff;
+}
+
+
+@media screen and (max-width:3000px) {
+    main section .row div div p {
+        font-size: x-large;
+    }
+}
+@media screen and (max-width: 770px) {
+    main section .row div div p {
+        font-size: medium;
+    }
+}
+
+/*-------------------------------------------------------------FOOTER---------------------------------------------------------------------------- */
+.copyright p {
+    padding-top: 0%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+.footerContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.copyright {    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:normal;
+
+
+}
+
+footer {
+    margin-top: 5%;
+}
+
+
+.footerLogos {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+.footerLogos img {
+    width: 10%;
+    height: 100%;
+}
+
+.footerLogos img:hover {    
+    transform: rotate(5deg);
+
+}
+
+.footerLogos :nth-child(3) {
+    margin-right: 3%;
+}
+
+@media screen and (max-width: 3000px){
+    .copyright p{
+    font-size: 20px;
+    font-weight: 900;
+        }
+        
+        .footerLogos img {
+            margin-right: -6%;
+        }
+        .footerContainer {
+            height: 30px;
+        }
+    }
+
+@media screen and (max-width:1050px) {
+    .copyright p {
+        font-size: 15px;
+    }
+    .footerLogos img {
+        margin-right: -3%;
+    }
+    .footerContainer {
+        height: 20px;
+    }
+}    
+
+@media screen and (max-width:690px) {
+    .copyright p {
+        font-size: 15px;
+    }
+    .footerLogos img {
+        margin-right: -5%;
+    }
+    .footerContainer {
+        height: 20px;
+    }
+}    
