@@ -1184,3 +1184,14 @@ footer {
         height: 20px;
     }
 }    
+
+@media screen and (max-width:450px) {
+    .copyright p {
+        font-size: 10px;
+    }
+
+    .footerContainer {
+        height: 15px;
+    }
+}    
+
