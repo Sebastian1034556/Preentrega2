@@ -1052,12 +1052,12 @@ font-size: 50px;
 }
 
 
-main section .row div div {
+.productsMain section .row div div {
     display: flex;
     justify-content: center;
     align-items: center ;
 }
-main section .row div div p {
+.productsMain section .row div div p {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
@@ -1194,4 +1194,17 @@ footer {
         height: 15px;
     }
 }    
+
+
+
+@media screen and (max-width:330px) {
+    .copyright p {
+        font-size: 8px;
+    }
+
+    .footerContainer {
+        height: 13px;
+    }
+}    
+
 
